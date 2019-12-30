@@ -1,0 +1,19 @@
+.post-category {
+	margin: 0 0.1em;
+	padding: 0.3em 1em;
+	color: $white;
+	background: $gray-meta;
+	@include font-size(80%);
+	&-design {
+		background: $tag-green;
+	}
+	&-pure {
+		background: $tag-blue;
+	}
+	&-yui {
+		background: $tag-violet;
+	}
+	&-js {
+		background: $tag-red;
+	}
+}

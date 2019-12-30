@@ -1,0 +1,118 @@
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.menu-item{
+    display: inline-block;
+    padding: .5em 1em;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+.mp-0{
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    background: $bg-sidebar;
+    color: $white;
+    font-family: sans-serif;
+}
+.brand-title,
+.brand-tagline {
+    @extend .mp-0;
+}
+.brand-title {
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: $blue-tagline;
+}
+
+.nav-list {
+    @extend .mp-0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    & a{
+        background: transparent;
+        border: 2px solid $blue-tagline;
+        color: $white;
+        margin-top: 1em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        @include font-size(85%);
+    }
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+    border: 2px solid $link;
+    text-decoration: none;
+}
+
+.content {
+    padding: 2em 1em 0;
+
+    &-subhead {
+        text-transform: uppercase;
+        color: $gray-subhead;
+        border-bottom: 1px solid $gray-subhead-border;
+        padding: 0.4em 0;
+        @include font-size(80%);
+        font-weight: 500;
+        letter-spacing: 0.1em;
+    } 
+}
+
+.post {
+    padding-bottom: 2em;
+    &-header{
+        padding-top: 1em;
+    }
+    &-title {
+        @include font-size(2em);
+        color: $gray-title;
+        margin-bottom: 0.2em;
+    }
+    &-avatar {
+        border-radius: 50px;
+        float: right;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    &-description {
+        font-family: Georgia, "Cambria", serif;
+        color: $gray-description;
+        line-height: 1.8em;
+    }
+    &-meta {
+        color: $gray-meta;
+        @include font-size(90%);
+        margin: 0;
+    }
+    &-images{
+        margin: 1em 0;
+    }
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: $white;
+    text-shadow: 0 1px 1px $gray-meta-img;
+}
+
+.footer {
+    padding: 1em 0;
+    & a{
+        color: $footer-link;
+        @include font-size(80%);
+    }
+}
